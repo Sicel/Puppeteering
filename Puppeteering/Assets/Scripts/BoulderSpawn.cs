@@ -36,7 +36,7 @@ public class BoulderSpawn : MonoBehaviour
         gameObject.GetComponent<BoxCollider>().enabled = false;
 
         //send out a raycast to a wall
-        Physics.Raycast(gameObject.transform.position, transform.TransformDirection(Vector3.forward), out RaycastHit hit, Mathf.Infinity);
+        Physics.Raycast(gameObject.transform.position, other.gameObject.transform.TransformDirection(Vector3.forward), out RaycastHit hit, Mathf.Infinity);
 
         //check if the distance of the raycast hit is great enough
         if(hit.distance > 3f)
@@ -49,19 +49,31 @@ public class BoulderSpawn : MonoBehaviour
 
             //spawn boulder
             GameObject newBoulder = Instantiate(boulder, hit.point, Quaternion.identity);
+            //Time.timeScale = 0f;
 
             //move boulder forward to prevent clipping
             Vector3 adjustVector = boulderVector;
-            adjustVector *= 0.5f;
+            adjustVector *= 0.8f;
             newBoulder.transform.position += adjustVector;
+
+            //move boulder up to prevent clipping
+            Vector3 tempPos = newBoulder.transform.position;
+            tempPos.y += 0.2f;
+            newBoulder.transform.position = tempPos;
 
             //add force to the boulder
             newBoulder.GetComponent<Rigidbody>().AddForce(boulderVector * boulderForce);
 
+            //testing stuff
             Debug.Log("GO BOULDER GO");
 
             //delete this trap object
             Destroy(gameObject);
+        }
+        else
+        {
+            //re-enable trigger for further trap checking
+            gameObject.GetComponent<BoxCollider>().enabled = true;
         }
     }
 }

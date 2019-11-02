@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boulder: {fileID: 477187078821789469, guid: 5fcfc967e18b4f34d953f4bd485ee2fd, type: 3}
-  boulderForce: 20
+  boulderForce: 300
 --- !u!1 &482297502
 GameObject:
   m_ObjectHideFlags: 0
