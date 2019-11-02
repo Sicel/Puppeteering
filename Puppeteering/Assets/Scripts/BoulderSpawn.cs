@@ -64,9 +64,6 @@ public class BoulderSpawn : MonoBehaviour
             //add force to the boulder
             newBoulder.GetComponent<Rigidbody>().AddForce(boulderVector * boulderForce);
 
-            //testing stuff
-            Debug.Log("GO BOULDER GO");
-
             //delete this trap object
             Destroy(gameObject);
         }
