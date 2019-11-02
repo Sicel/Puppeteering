@@ -27,8 +27,11 @@ public class PitfallSpawn : MonoBehaviour
         //check if the collision is occuring with the player
         if(collision.gameObject.tag == "Player")
         {
-            //destroy this gameobject
-            Destroy(gameObject);
+            //destroy this gameobject on a delay
+            Destroy(gameObject, 2);
+
+            //activate gravity on the pitfall
+            gameObject.GetComponent<Rigidbody>().useGravity = true;
         }
     }
 }
