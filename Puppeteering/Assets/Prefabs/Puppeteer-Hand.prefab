@@ -472,7 +472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d172a5f355724284890092be42442384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0.4
+  fuzzyMultiplier: 0.35
+  marionette: {fileID: 0}
 --- !u!114 &4623228529221472287
 MonoBehaviour:
   m_ObjectHideFlags: 0
