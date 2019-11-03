@@ -4,12 +4,16 @@ using UnityEngine;
 using UnityEditor;
 
 [CustomEditor(typeof(LevelAdjustment))]
+[CanEditMultipleObjects]
 public class LevelAdjustmentEditor : Editor
 {
     LevelAdjustment levelAdjustment;
     float prefabHalfSize;
     Vector3 colliderCenter;
     Vector3 colliderSize;
+    BoxCollider[] colliders;
+    List<Vector3> childPositions = new List<Vector3>();
+    bool showColliders = false;
 
     float xMin = 0;
     float yMin = 0;
@@ -28,16 +32,34 @@ public class LevelAdjustmentEditor : Editor
     {
         base.OnInspectorGUI();
 
-        prefabHalfSize = EditorGUILayout.FloatField(prefabHalfSize);
+        //prefabHalfSize = EditorGUILayout.FloatField(prefabHalfSize);
 
         if (GUILayout.Button("Update Collider"))
         {
             UpdateBounds();
         }
+
+        EditorGUILayout.LabelField("xMin: " + xMin);
+        EditorGUILayout.LabelField("xMax: " + xMax);
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("yMin: " + yMin);
+        EditorGUILayout.LabelField("yMax: " + yMax);
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("zMin: " + zMin);
+        EditorGUILayout.LabelField("zMax: " + zMax);
+        EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Box Colliders: " + childPositions.Count);
     }
 
     void UpdateBounds()
     {
+        colliders = levelAdjustment.gameObject.GetComponentsInChildren<BoxCollider>();
+        childPositions = new List<Vector3>();
+        foreach (BoxCollider collider in colliders)
+        {
+            childPositions.Add(collider.gameObject.transform.position);
+        }
+
         xMin = 0;
         yMin = 0;
         zMin = 0;
@@ -45,34 +67,37 @@ public class LevelAdjustmentEditor : Editor
         yMax = 0;
         zMax = 0;
 
-        for (int i = 0; i < levelAdjustment.gameObject.transform.childCount; i++)
+        //for (int i = 0; i < levelAdjustment.gameObject.transform.childCount; i++)
+        for (int i = 0; i < childPositions.Count; i++)
         {
-            Transform child = levelAdjustment.gameObject.transform.GetChild(i);
-            if (child.position.x < xMin)
+            //Transform childTransform = levelAdjustment.gameObject.transform.GetChild(i);
+            //Vector3 child = childTransform.TransformPoint(childTransform.localPosition);
+            Vector3 child = childPositions[i];
+            if (child.x < xMin)
             {
-                xMin = child.position.x - 2;
+                xMin = child.x;// - 2;
             }
-            else if (child.position.x > xMax)
+            else if (child.x > xMax)
             {
-                xMax = child.position.x + 2;
-            }
-
-            if (child.position.y < yMin)
-            {
-                yMin = child.position.y - 2;
-            }
-            else if (child.position.y > yMax)
-            {
-                yMax = child.position.y + 2;
+                xMax = child.x;// + 2;
             }
 
-            if (child.position.z < zMin)
+            if (child.y < yMin)
             {
-                zMin = child.position.z - 2;
+                yMin = child.y;// - 2;
             }
-            else if (child.position.z > zMax)
+            else if (child.y > yMax)
             {
-                zMax = child.position.z + 2;
+                yMax = child.y;// + 2;
+            }
+
+            if (child.z < zMin)
+            {
+                zMin = child.z;// - 2;
+            }
+            else if (child.z > zMax)
+            {
+                zMax = child.z;// + 2;
             }
         }
 

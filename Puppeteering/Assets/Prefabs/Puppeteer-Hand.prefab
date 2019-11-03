@@ -122,7 +122,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.4085102
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -195,6 +195,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8417006688987913109}
   rope: {fileID: 389978942}
+  springForce: {fileID: 577839718771203451}
+  strengthValue: 0.25
   strength: 20
 --- !u!1 &306903740512537606
 GameObject:
@@ -418,6 +420,7 @@ GameObject:
   - component: {fileID: 5711637981530834499}
   - component: {fileID: 1821982342495746215}
   - component: {fileID: 4623228529221472287}
+  - component: {fileID: 577839718771203451}
   m_Layer: 0
   m_Name: Puppeteer-Hand
   m_TagString: Untagged
@@ -486,6 +489,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f641036b84b17ab4a97a13d151f1bb17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &577839718771203451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698572166460873002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec8cb85acd76ce84eaa7779516360f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fingerCount: 0
+  springForce: 100
 --- !u!1 &1751677806641981848
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,7 +625,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.4085102
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -681,6 +698,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 402493343}
   rope: {fileID: 755411007}
+  springForce: {fileID: 577839718771203451}
+  strengthValue: 0.2
   strength: 20
 --- !u!1 &1963216075866620369
 GameObject:
@@ -1423,7 +1442,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.41276547
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1496,6 +1515,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2073929877}
   rope: {fileID: 2000145735}
+  springForce: {fileID: 577839718771203451}
+  strengthValue: 0.25
   strength: 25
 --- !u!1 &6452385846656949294
 GameObject:
@@ -1805,7 +1826,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.39999962
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -1878,6 +1899,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 7751330538273480569}
   rope: {fileID: 1217602928}
+  springForce: {fileID: 577839718771203451}
+  strengthValue: 0.25
   strength: 25
 --- !u!1 &7921100440862857589
 GameObject:
