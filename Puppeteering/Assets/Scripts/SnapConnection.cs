@@ -41,7 +41,6 @@ public class SnapConnection : MonoBehaviour
         //snap the connection if colliding with the kill plane
         if(other.gameObject.tag == "Kill Plain")
         {
-            Debug.Log("kill plane");
             Destroy(joint);
         }
     }
