@@ -356,11 +356,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Marionette
       objectReference: {fileID: 0}
-    - target: {fileID: 3974016078837532754, guid: ad648ab9bbcbdd743b6713502c8a9540,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 3974016080010093962, guid: ad648ab9bbcbdd743b6713502c8a9540,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -415,11 +410,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3974016079923605418, guid: ad648ab9bbcbdd743b6713502c8a9540,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad648ab9bbcbdd743b6713502c8a9540, type: 3}
@@ -808,25 +798,5 @@ PrefabInstance:
       propertyPath: marionette
       value: 
       objectReference: {fileID: 1235604435}
-    - target: {fileID: 389978945, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
-      value: 0.4212761
-      objectReference: {fileID: 0}
-    - target: {fileID: 755411010, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
-      value: 0.4127655
-      objectReference: {fileID: 0}
-    - target: {fileID: 2000145738, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
-      value: 0.4170208
-      objectReference: {fileID: 0}
-    - target: {fileID: 2000145738, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1217602930, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
-      value: 0.4042549
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
