@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4833779317356755080}
   - component: {fileID: 3967296478751072952}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Halway 3 SHORT
   m_TagString: Untagged
   m_Icon: {fileID: 0}

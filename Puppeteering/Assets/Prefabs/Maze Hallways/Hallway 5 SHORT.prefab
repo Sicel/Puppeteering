@@ -196,7 +196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 185522589065694529}
   - component: {fileID: 3646350824092994337}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hallway 5 SHORT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
