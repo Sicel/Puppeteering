@@ -457,6 +457,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8740914909420887753, guid: d1f9646e78b411041a78f0e8c7fe4067,
+        type: 3}
+      propertyPath: boulderForce
+      value: 400
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1f9646e78b411041a78f0e8c7fe4067, type: 3}
 --- !u!1001 &528248979
