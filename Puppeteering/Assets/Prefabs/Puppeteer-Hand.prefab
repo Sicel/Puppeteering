@@ -401,6 +401,7 @@ GameObject:
   - component: {fileID: 2434709869938535225}
   - component: {fileID: 5711637981530834499}
   - component: {fileID: 1821982342495746215}
+  - component: {fileID: 4623228529221472287}
   m_Layer: 0
   m_Name: Puppeteer-Hand
   m_TagString: Untagged
@@ -456,6 +457,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0.4
+--- !u!114 &4623228529221472287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698572166460873002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f641036b84b17ab4a97a13d151f1bb17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1751677806641981848
 GameObject:
   m_ObjectHideFlags: 0

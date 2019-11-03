@@ -487,7 +487,8 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.13367397
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8540673228919281677, guid: ad648ab9bbcbdd743b6713502c8a9540, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad648ab9bbcbdd743b6713502c8a9540, type: 3}
 --- !u!1001 &1600027217
 PrefabInstance:
@@ -650,8 +651,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024379125}
-  m_LocalRotation: {x: -0.026035622, y: -0.88917816, z: 0.45578036, w: 0.030798927}
-  m_LocalPosition: {x: -3.4, y: 75.4, z: 22.6}
+  m_LocalRotation: {x: -0.026035624, y: -0.8891782, z: 0.4557804, w: 0.030798929}
+  m_LocalPosition: {x: -3.4000006, y: 75.4, z: 22.600006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -730,21 +731,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1217602928, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
-      propertyPath: m_ConnectedBody
-      value: 
-      objectReference: {fileID: 1724967939}
     - target: {fileID: 389978942, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 364184125}
-    - target: {fileID: 2000145735, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
-      propertyPath: m_ConnectedBody
-      value: 
-      objectReference: {fileID: 927042784}
     - target: {fileID: 755411007, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 2108821787}
+    - target: {fileID: 2000145735, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 927042784}
+    - target: {fileID: 1217602928, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
+      propertyPath: m_ConnectedBody
+      value: 
+      objectReference: {fileID: 1724967939}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
