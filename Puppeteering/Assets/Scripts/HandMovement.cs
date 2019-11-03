@@ -13,7 +13,7 @@ public class HandMovement : MonoBehaviour
     private float mouseY;
     private float fuzzy;
     public float fuzzyMultiplier;
-    public Transform marionette;
+    public GameObject marionette;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,8 @@ public class HandMovement : MonoBehaviour
     void Update()
     {
         float angle = gameObject.transform.eulerAngles.y * Mathf.Deg2Rad;
-        fuzzy = Mathf.Sqrt(Mathf.Pow(gameObject.transform.position.x - marionette.position.x, 2) + Mathf.Pow(gameObject.transform.position.z - marionette.position.z, 2)) * fuzzyMultiplier;
+        fuzzy = Mathf.Sqrt(Mathf.Pow(gameObject.transform.position.x - marionette.transform.position.x, 2) + Mathf.Pow(gameObject.transform.position.z - marionette.transform.position.z, 2)) * fuzzyMultiplier;
+        Debug.Log("marionette position: " + marionette.transform.position);
         mouseX = Input.GetAxis("Mouse X");
         mouseY = Input.GetAxis("Mouse Y");
         Vector3 forward = new Vector3(Mathf.Cos(angle), 0, -Mathf.Sin(angle));

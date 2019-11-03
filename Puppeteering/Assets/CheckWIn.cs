@@ -27,6 +27,9 @@ public class CheckWIn : MonoBehaviour
         {
             resultsScreen.GetComponent<GameStateScript>().won = true;
             resultsScreen.SetActive(true);
+
+            //reactivate cursor
+            Cursor.visible = true;
         }
     }
 }

@@ -52,6 +52,9 @@ public class LoseManager : MonoBehaviour
             //set lose state to true through lose object
             loseScreen.GetComponent<GameStateScript>().lost = true;
             loseScreen.SetActive(true);
+
+            //reactivate cursor
+            Cursor.visible = true;
         }
     }
 }
