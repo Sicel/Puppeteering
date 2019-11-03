@@ -34,4 +34,16 @@ public class PitfallSpawn : MonoBehaviour
             gameObject.GetComponent<Rigidbody>().useGravity = true;
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            //destroy this gameobject on a delay
+            Destroy(gameObject, 2);
+
+            //activate gravity on the pitfall
+            gameObject.GetComponent<Rigidbody>().useGravity = true;
+        }
+    }
 }
