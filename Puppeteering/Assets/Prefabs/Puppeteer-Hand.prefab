@@ -196,7 +196,7 @@ MonoBehaviour:
   animator: {fileID: 8417006688987913109}
   rope: {fileID: 389978942}
   springForce: {fileID: 577839718771203451}
-  strengthValue: 0.25
+  strengthValue: 0.35
   strength: 20
 --- !u!1 &306903740512537606
 GameObject:
@@ -699,7 +699,7 @@ MonoBehaviour:
   animator: {fileID: 402493343}
   rope: {fileID: 755411007}
   springForce: {fileID: 577839718771203451}
-  strengthValue: 0.2
+  strengthValue: 0.3
   strength: 20
 --- !u!1 &1963216075866620369
 GameObject:
@@ -1516,7 +1516,7 @@ MonoBehaviour:
   animator: {fileID: 2073929877}
   rope: {fileID: 2000145735}
   springForce: {fileID: 577839718771203451}
-  strengthValue: 0.25
+  strengthValue: 0.35
   strength: 25
 --- !u!1 &6452385846656949294
 GameObject:
@@ -1900,7 +1900,7 @@ MonoBehaviour:
   animator: {fileID: 7751330538273480569}
   rope: {fileID: 1217602928}
   springForce: {fileID: 577839718771203451}
-  strengthValue: 0.25
+  strengthValue: 0.3
   strength: 25
 --- !u!1 &7921100440862857589
 GameObject:

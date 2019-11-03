@@ -11,7 +11,7 @@ public class SpringForces : MonoBehaviour
     {
         if (fingerCount >= 3)
         {
-            return (int)((springForce / fingerCount) * strength);
+            return (int)((springForce / (fingerCount - 2) * strength));
         }
         else if (fingerCount < 3)
         {
@@ -60,12 +60,7 @@ public class SpringForces : MonoBehaviour
 
         if (fingerCount > 4)
         {
-            fingerCount -= 4;
-
-            if (fingerCount < 0)
-            {
-                fingerCount = 0;
-            }
+            fingerCount = 0;
         }
     }
 }
