@@ -23,7 +23,7 @@ public class CheckWIn : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //win if you touch the win trigger
-        if(other.gameObject.tag == "Win")
+        if(other.gameObject.tag == "Player")
         {
             resultsScreen.GetComponent<GameStateScript>().won = true;
             resultsScreen.SetActive(true);
