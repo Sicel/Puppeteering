@@ -48,7 +48,7 @@ public class LevelEditor : Editor
                     break;
                 case 1:
                     EditorPrefs.SetBool("IsLevelEditorEnabled", true);
-                    EditorPrefs.SetBool("SelectedBlockNextToMousePosition", false);
+                    EditorPrefs.SetBool("SelectedBlockNextToMousePosition", true);
                     EditorPrefs.SetFloat("CubeHandleColorR", Color.magenta.r);
                     EditorPrefs.SetFloat("CubeHandleColorG", Color.magenta.g);
                     EditorPrefs.SetFloat("CubeHandleColorB", Color.magenta.b);
@@ -57,7 +57,7 @@ public class LevelEditor : Editor
                     break;
                 case 2:
                     EditorPrefs.SetBool("IsLevelEditorEnabled", true);
-                    EditorPrefs.SetBool("SelectedBlockNextToMousePosition", true);
+                    EditorPrefs.SetBool("SelectedBlockNextToMousePosition", false);
                     EditorPrefs.SetFloat("CubeHandleColorR", Color.yellow.r);
                     EditorPrefs.SetFloat("CubeHandleColorG", Color.yellow.g);
                     EditorPrefs.SetFloat("CubeHandleColorB", Color.yellow.b);
@@ -178,7 +178,7 @@ public class LevelEditor : Editor
         for(int i = 0; i < LevelParent.childCount; i++)
         {
             float distanceToBlock = Vector3.Distance(LevelParent.GetChild(i).transform.position, position);
-            if (distanceToBlock <= 1)
+            if (distanceToBlock <= 4)
             {
                 Undo.DestroyObjectImmediate(LevelParent.GetChild(i).gameObject);
 
@@ -230,15 +230,15 @@ public class LevelEditor : Editor
 
     private static void DrawHandlesCube(Vector3 center)
     {
-        Vector3 p1 = center + Vector3.up * 0.5f + Vector3.right * 0.5f + Vector3.forward * 0.5f;
-        Vector3 p2 = center + Vector3.up * 0.5f + Vector3.right * 0.5f - Vector3.forward * 0.5f;
-        Vector3 p3 = center + Vector3.up * 0.5f - Vector3.right * 0.5f - Vector3.forward * 0.5f;
-        Vector3 p4 = center + Vector3.up * 0.5f - Vector3.right * 0.5f + Vector3.forward * 0.5f;
+        Vector3 p1 = center + Vector3.up * 2 + Vector3.right * 2 + Vector3.forward * 2;
+        Vector3 p2 = center + Vector3.up * 2 + Vector3.right * 2 - Vector3.forward * 2;
+        Vector3 p3 = center + Vector3.up * 2 - Vector3.right * 2 - Vector3.forward * 2;
+        Vector3 p4 = center + Vector3.up * 2 - Vector3.right * 2 + Vector3.forward * 2;
 
-        Vector3 p5 = center - Vector3.up * 0.5f + Vector3.right * 0.5f + Vector3.forward * 0.5f;
-        Vector3 p6 = center - Vector3.up * 0.5f + Vector3.right * 0.5f - Vector3.forward * 0.5f;
-        Vector3 p7 = center - Vector3.up * 0.5f - Vector3.right * 0.5f - Vector3.forward * 0.5f;
-        Vector3 p8 = center - Vector3.up * 0.5f - Vector3.right * 0.5f + Vector3.forward * 0.5f;
+        Vector3 p5 = center - Vector3.up * 2 + Vector3.right * 2 + Vector3.forward * 2;
+        Vector3 p6 = center - Vector3.up * 2 + Vector3.right * 2 - Vector3.forward * 2;
+        Vector3 p7 = center - Vector3.up * 2 - Vector3.right * 2 - Vector3.forward * 2;
+        Vector3 p8 = center - Vector3.up * 2 - Vector3.right * 2 + Vector3.forward * 2;
 
         Handles.DrawLine(p1, p2);
         Handles.DrawLine(p2, p3);
@@ -292,16 +292,21 @@ public class LevelEditor : Editor
         {
             Vector3 offset = Vector3.zero;
 
-            if (EditorPrefs.GetBool("SelectBlockNextToMousePosition", true))
+            if (EditorPrefs.GetBool("SelectedBlockNextToMousePosition", true))
             {
-                offset = hit.normal;
+                offset = hit.normal* 4;
+                if (hit.normal.x > 0 || hit.normal.y > 0 || hit.normal.z > 0)
+                {
+                    offset = hit.normal;
+                }
+                Debug.Log(hit.normal);
             }
 
             currentHandlePos.x = Mathf.Floor(hit.point.x - hit.normal.x * 0.001f + offset.x);
             currentHandlePos.y = Mathf.Floor(hit.point.y - hit.normal.y * 0.001f + offset.y);
             currentHandlePos.z = Mathf.Floor(hit.point.z - hit.normal.z * 0.001f + offset.z);
 
-            currentHandlePos += new Vector3(0.5f, 0.5f, 0.5f);
+            currentHandlePos += new Vector3(2, 2, 2);
         }
     }
 }

@@ -7,6 +7,7 @@ using UnityEditor;
 public class LevelAdjustmentEditor : Editor
 {
     LevelAdjustment levelAdjustment;
+    float prefabHalfSize;
     Vector3 colliderCenter;
     Vector3 colliderSize;
 
@@ -26,6 +27,8 @@ public class LevelAdjustmentEditor : Editor
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
+
+        prefabHalfSize = EditorGUILayout.FloatField(prefabHalfSize);
 
         if (GUILayout.Button("Update Collider"))
         {
@@ -47,29 +50,29 @@ public class LevelAdjustmentEditor : Editor
             Transform child = levelAdjustment.gameObject.transform.GetChild(i);
             if (child.position.x < xMin)
             {
-                xMin = child.position.x - 0.5f;
+                xMin = child.position.x - 2;
             }
             else if (child.position.x > xMax)
             {
-                xMax = child.position.x + 0.5f;
+                xMax = child.position.x + 2;
             }
 
             if (child.position.y < yMin)
             {
-                yMin = child.position.y - 0.5f;
+                yMin = child.position.y - 2;
             }
             else if (child.position.y > yMax)
             {
-                yMax = child.position.y + 0.5f;
+                yMax = child.position.y + 2;
             }
 
             if (child.position.z < zMin)
             {
-                zMin = child.position.z - 0.5f;
+                zMin = child.position.z - 2;
             }
             else if (child.position.z > zMax)
             {
-                zMax = child.position.z + 0.5f;
+                zMax = child.position.z + 2;
             }
         }
 
