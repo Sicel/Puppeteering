@@ -25,7 +25,7 @@ public class HandMovement : MonoBehaviour
     void Update()
     {
         fuzzy = Mathf.Sqrt(Mathf.Pow(gameObject.transform.position.x - marionette.position.x, 2) + Mathf.Pow(gameObject.transform.position.z - marionette.position.z, 2)) * fuzzyMultiplier;
-        Debug.Log(fuzzy + ", " + (gameObject.transform.position.x - marionette.position.x) + ", " + (gameObject.transform.position.z - marionette.position.z));
+        //Debug.Log(fuzzy + ", " + (gameObject.transform.position.x - marionette.position.x) + ", " + (gameObject.transform.position.z - marionette.position.z));
         mouseX = Input.GetAxis("Mouse X");
         mouseY = Input.GetAxis("Mouse Y");
         gameObject.transform.position += new Vector3(mouseX/fuzzy, 0, mouseY/fuzzy);
