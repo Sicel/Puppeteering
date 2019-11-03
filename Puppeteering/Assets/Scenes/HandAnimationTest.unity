@@ -772,6 +772,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1821982342495746215, guid: 263b6ea41a7df654d919b63de5a55894,
+        type: 3}
+      propertyPath: marionette
+      value: 
+      objectReference: {fileID: 1235604435}
     - target: {fileID: 389978942, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
       propertyPath: m_ConnectedBody
       value: 
