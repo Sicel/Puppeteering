@@ -9,9 +9,11 @@ using UnityEngine;
 
 public class BoulderSpawn : MonoBehaviour
 {
-    //field for the boulder prefab this trap will spawn when triggered
+    //field for the boulder prefab this trap will spawn when triggered and its spotlight
     [SerializeField]
     private GameObject boulder;
+    [SerializeField]
+    private GameObject boulderLight;
 
     //field for boulder force
     [SerializeField]
@@ -39,7 +41,7 @@ public class BoulderSpawn : MonoBehaviour
             gameObject.GetComponent<BoxCollider>().enabled = false;
 
             //send out a raycast to a wall
-            Physics.Raycast(gameObject.transform.position, other.gameObject.transform.TransformDirection(Vector3.forward), out RaycastHit hit, Mathf.Infinity);
+            Physics.Raycast(gameObject.transform.position, gameObject.transform.TransformDirection(Vector3.forward), out RaycastHit hit, Mathf.Infinity);
 
             //check if the distance of the raycast hit is great enough
             if (hit.distance > 3f)
@@ -52,7 +54,12 @@ public class BoulderSpawn : MonoBehaviour
 
                 //spawn boulder
                 GameObject newBoulder = Instantiate(boulder, hit.point, Quaternion.identity);
-                //Time.timeScale = 0f;
+
+                //spawn boulder light
+                GameObject newLight = Instantiate(boulderLight);
+                newLight.transform.position = new Vector3(newBoulder.transform.position.x, newLight.transform.position.y, newBoulder.transform.position.z);
+                newLight.GetComponent<MarionetteLight>().targetPlayer = false;
+                newLight.GetComponent<Light>().color = Color.red;
 
                 //move boulder forward to prevent clipping
                 Vector3 adjustVector = boulderVector;
@@ -69,6 +76,10 @@ public class BoulderSpawn : MonoBehaviour
 
                 //delete this trap object
                 Destroy(gameObject);
+
+                //destroy the boulder and its light after 10 seconds
+                Destroy(newBoulder, 10);
+                Destroy(newLight, 10);
             }
             else
             {

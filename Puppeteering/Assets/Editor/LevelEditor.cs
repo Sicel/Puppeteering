@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System;
-
+#if Unity_Editor
 [InitializeOnLoad]
 public class LevelEditor : Editor
 {
@@ -310,3 +310,4 @@ public class LevelEditor : Editor
         }
     }
 }
+#endif

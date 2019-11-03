@@ -22,7 +22,10 @@ public class MarionetteLight : MonoBehaviour
     public float lightSpeed = 10;
 
     //field for the target the light will seek
-    private GameObject player;
+    private GameObject target;
+
+    //field for a target bool
+    public bool targetPlayer;
 
     //constant float for minimum velocity
     private const float MIN_VELOCITY = 0.1f;
@@ -36,15 +39,15 @@ public class MarionetteLight : MonoBehaviour
         velocity = Vector3.zero;
         acceleration = Vector3.zero;
 
-        //get player target object
-        player = GameObject.FindGameObjectWithTag("Body");
+        //get target object
+        target = targetPlayer ? GameObject.FindGameObjectWithTag("Body") : GameObject.FindGameObjectWithTag("Boulder");
     }
 
     // Update is called once per frame
     void Update()
     {
         //apply seeking force
-        ApplyForce(Seek(player));
+        ApplyForce(Seek(target));
 
         //calculate physics
         UpdatePhysics();

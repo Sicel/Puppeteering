@@ -58,4 +58,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boulder: {fileID: 477187078821789469, guid: 5fcfc967e18b4f34d953f4bd485ee2fd, type: 3}
+  boulderLight: {fileID: 4313210850136697066, guid: 48ada5ed4d3d13e4fa410f410a596630,
+    type: 3}
   boulderForce: 300
