@@ -18,11 +18,13 @@ public class Pinky : MonoBehaviour
         {
             animator.SetBool("PinkyBool", true);
             animator.SetFloat("PinkyMotion", 1);
+            animator.SetBool("Activated", true);
         }
         if (Input.GetKeyUp(KeyCode.F))
         {
             animator.SetBool("PinkyBool", false);
             animator.SetFloat("PinkyMotion", -1);
+            animator.SetBool("Activated", false);
         }
     }
 }

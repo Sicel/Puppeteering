@@ -18,11 +18,13 @@ public class PointerFinger : MonoBehaviour
         {
             animator.SetBool("PointerBool", true);
             animator.SetFloat("PointerMotion", 1);
+            animator.SetBool("Activated", true);
         }
         else if (Input.GetKeyUp(KeyCode.A))
         {
             animator.SetBool("PointerBool", false);
             animator.SetFloat("PointerMotion", -1);
+            animator.SetBool("Activated", false);
         }
     }
 }

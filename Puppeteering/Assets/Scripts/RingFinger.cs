@@ -18,11 +18,13 @@ public class RingFinger : MonoBehaviour
         {
             animator.SetBool("RingBool", true);
             animator.SetFloat("RingMotion", 1);
+            animator.SetBool("Activated", true);
         }
         else if (Input.GetKeyUp(KeyCode.D))
         {
             animator.SetBool("RingBool", false);
             animator.SetFloat("RingMotion", -1);
+            animator.SetBool("Activated", false);
         }
     }
 }
