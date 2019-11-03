@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+#if Unity_Editor
 [System.Serializable]
 public class LevelObject
 {
@@ -68,4 +68,5 @@ namespace UnityEditor
             serializedObject.ApplyModifiedProperties();
         }
     }
-}
+
+#endif
