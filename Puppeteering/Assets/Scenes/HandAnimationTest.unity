@@ -416,7 +416,7 @@ PrefabInstance:
     - target: {fileID: 4313210850136697068, guid: 48ada5ed4d3d13e4fa410f410a596630,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 63.3
+      value: 41.9
       objectReference: {fileID: 0}
     - target: {fileID: 4313210850136697068, guid: 48ada5ed4d3d13e4fa410f410a596630,
         type: 3}
@@ -462,6 +462,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313210850136697071, guid: 48ada5ed4d3d13e4fa410f410a596630,
+        type: 3}
+      propertyPath: targetPlayer
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48ada5ed4d3d13e4fa410f410a596630, type: 3}
@@ -744,6 +749,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1821982342495746215, guid: 263b6ea41a7df654d919b63de5a55894,
+        type: 3}
+      propertyPath: marionette
+      value: 
+      objectReference: {fileID: 1235604435}
     - target: {fileID: 389978942, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
       propertyPath: m_ConnectedBody
       value: 
@@ -760,10 +770,5 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 1724967939}
-    - target: {fileID: 1821982342495746215, guid: 263b6ea41a7df654d919b63de5a55894,
-        type: 3}
-      propertyPath: marionette
-      value: 
-      objectReference: {fileID: 1235604435}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
