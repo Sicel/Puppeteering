@@ -19,32 +19,32 @@ public class RotateCamera : MonoBehaviour
     void Update()
     {
         //rotate the camera and the hand object to the left
-        if(Input.GetKeyDown(KeyCode.Mouse0))
+        if(Input.GetKey(KeyCode.Mouse0))
         {
             //rotate camera
             Quaternion camTemp = Camera.main.transform.rotation;
-            camTemp.eulerAngles += Vector3.Lerp(camTemp.eulerAngles, new Vector3(0, -90, 0), 1);
+            camTemp.eulerAngles += Vector3.Lerp(camTemp.eulerAngles, new Vector3(0, -1, 0), 1);
             Camera.main.transform.rotation = camTemp;
 
             //rotate hand
             Debug.Log("rotate hand");
             Quaternion handTemp = gameObject.transform.rotation;
-            handTemp.eulerAngles += Vector3.Lerp(handTemp.eulerAngles, new Vector3(0, -90, 0), 1);
+            handTemp.eulerAngles += Vector3.Lerp(handTemp.eulerAngles, new Vector3(0, -1, 0), 1);
             gameObject.transform.rotation = handTemp;
         }
 
         //rotate the camera and the hand object to the right
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKey(KeyCode.Mouse1))
         {
             //rotate camera
             Quaternion camTemp = Camera.main.transform.rotation;
-            camTemp.eulerAngles += Vector3.Lerp(camTemp.eulerAngles, new Vector3(0, 90, 0), 1);
+            camTemp.eulerAngles += Vector3.Lerp(camTemp.eulerAngles, new Vector3(0, 1, 0), 1);
             Camera.main.transform.rotation = camTemp;
 
             //rotate hand
             Debug.Log("rotate hand");
             Quaternion handTemp = gameObject.transform.rotation;
-            handTemp.eulerAngles += Vector3.Lerp(handTemp.eulerAngles, new Vector3(0, 90, 0), 1);
+            handTemp.eulerAngles += Vector3.Lerp(handTemp.eulerAngles, new Vector3(0, 1, 0), 1);
             gameObject.transform.rotation = handTemp;
         }
     }
