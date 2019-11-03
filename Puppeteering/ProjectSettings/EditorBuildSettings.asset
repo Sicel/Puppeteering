@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/TrapTest.unity
     guid: ac7164e5b7853e042b5e0f063c9653f7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LightingTest.unity
     guid: 1f7728564ee39dd48a6cecddcdcc8ef3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HandAnimationTest.unity
     guid: d54fa2c481b8c994abc0e17274947ea3
   m_configObjects: {}
