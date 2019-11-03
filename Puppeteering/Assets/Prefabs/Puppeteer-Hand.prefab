@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d172a5f355724284890092be42442384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuzzyMultiplier: 0.35
+  fuzzyMultiplier: 0.3
   marionette: {fileID: 0}
 --- !u!114 &4623228529221472287
 MonoBehaviour:
