@@ -26,7 +26,7 @@ public class SpringForces : MonoBehaviour
         {
             fingerCount++;
         }
-        if (Input.GetKeyUp(KeyCode.A))
+        else if (Input.GetKeyUp(KeyCode.A))
         {
             fingerCount--;
         }
@@ -35,7 +35,7 @@ public class SpringForces : MonoBehaviour
         {
             fingerCount++;
         }
-        if (Input.GetKeyUp(KeyCode.S))
+        else if (Input.GetKeyUp(KeyCode.S))
         {
             fingerCount--;
         }
@@ -44,7 +44,7 @@ public class SpringForces : MonoBehaviour
         {
             fingerCount++;
         }
-        if (Input.GetKeyUp(KeyCode.D))
+        else if (Input.GetKeyUp(KeyCode.D))
         {
             fingerCount--;
         }
@@ -53,7 +53,7 @@ public class SpringForces : MonoBehaviour
         {
             fingerCount++;
         }
-        if (Input.GetKeyUp(KeyCode.F))
+        else if (Input.GetKeyUp(KeyCode.F))
         {
             fingerCount--;
         }
