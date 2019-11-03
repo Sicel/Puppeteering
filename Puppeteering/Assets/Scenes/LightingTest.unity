@@ -1064,5 +1064,15 @@ PrefabInstance:
       propertyPath: m_SpotAngle
       value: 62.6
       objectReference: {fileID: 0}
+    - target: {fileID: 4313210850136697071, guid: 48ada5ed4d3d13e4fa410f410a596630,
+        type: 3}
+      propertyPath: targetBool
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4313210850136697071, guid: 48ada5ed4d3d13e4fa410f410a596630,
+        type: 3}
+      propertyPath: targetPlayer
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48ada5ed4d3d13e4fa410f410a596630, type: 3}
