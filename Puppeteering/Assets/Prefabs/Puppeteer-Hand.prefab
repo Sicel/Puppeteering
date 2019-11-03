@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 8417006688987913109}
   rope: {fileID: 389978942}
-  strength: 10
+  strength: 20
 --- !u!1 &306903740512537606
 GameObject:
   m_ObjectHideFlags: 0
@@ -681,7 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 402493343}
   rope: {fileID: 755411007}
-  strength: 10
+  strength: 20
 --- !u!1 &1963216075866620369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1496,7 +1496,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2073929877}
   rope: {fileID: 2000145735}
-  strength: 15
+  strength: 25
 --- !u!1 &6452385846656949294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1878,7 +1878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 7751330538273480569}
   rope: {fileID: 1217602928}
-  strength: 15
+  strength: 25
 --- !u!1 &7921100440862857589
 GameObject:
   m_ObjectHideFlags: 0
