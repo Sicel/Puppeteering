@@ -50,7 +50,8 @@ public class LoseManager : MonoBehaviour
         if(joints.Count == 0)
         {
             //set lose state to true through lose object
-            //Nick put your code here
+            loseScreen.GetComponent<GameStateScript>().lost = true;
+            loseScreen.SetActive(true);
         }
     }
 }
