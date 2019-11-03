@@ -18,11 +18,13 @@ public class MiddleFinger : MonoBehaviour
         {
             animator.SetBool("MiddleBool", true);
             animator.SetFloat("MiddleFloat", 1);
+            animator.SetBool("Activated", true);
         }
         else if (Input.GetKeyUp(KeyCode.S))
         {
             animator.SetBool("MiddleBool", false);
             animator.SetFloat("MiddleFloat", -1);
+            animator.SetBool("Activated", false);
         }
     }
 }
