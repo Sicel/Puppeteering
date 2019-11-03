@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HandAnimationTest.unity
     guid: d54fa2c481b8c994abc0e17274947ea3
+  - enabled: 1
+    path: Assets/Scenes/LevelMaking.unity
+    guid: 353adae71b64ed24c98f95ce73d38290
   m_configObjects: {}
