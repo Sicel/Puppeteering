@@ -20,5 +20,11 @@ public class FingerLineDrawer : MonoBehaviour
     {
         lineRenderer.SetPosition(0, springJoint.anchor + gameObject.transform.position);
         lineRenderer.SetPosition(1, springJoint.connectedAnchor + connectedBody.position);
+
+        //disable the string when a connection is snapped
+        if(springJoint.connectedBody.GetComponentInParent<CharacterJoint>() == null)
+        {
+            lineRenderer.enabled = false;
+        }
     }
 }

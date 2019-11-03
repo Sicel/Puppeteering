@@ -27,11 +27,11 @@ Transform:
   m_LocalPosition: {x: -6.1759734, y: 3.8468416, z: -23.891676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 8240529996984257469}
   - {fileID: 8240529997637169850}
   - {fileID: 8240529997369669555}
   - {fileID: 8240529997051391911}
   - {fileID: 8240529997366818730}
-  - {fileID: 8240529996984257469}
   - {fileID: 8240529996064444608}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 3974016080212182764}
   m_Layer: 0
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,7 +68,7 @@ Transform:
   m_Children:
   - {fileID: 2348578535239559687}
   m_Father: {fileID: 3974016080010093962}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &3974016080212182767
 Rigidbody:
@@ -117,18 +117,18 @@ CharacterJoint:
     spring: 0
     damper: 0
   m_LowTwistLimit:
-    limit: 21.21182
+    limit: -21.137867
     bounciness: 0
     contactDistance: 0
   m_HighTwistLimit:
-    limit: 152.93222
+    limit: 16.379156
     bounciness: 0
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
     damper: 0
   m_Swing1Limit:
-    limit: 61.72554
+    limit: 65.63984
     bounciness: 0
     contactDistance: 0
   m_Swing2Limit:
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 3974016080831170316}
   m_Layer: 0
   m_Name: Right-Curved-Shoulder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -178,7 +178,7 @@ Transform:
   m_Children:
   - {fileID: 6884992250902243027}
   m_Father: {fileID: 3974016080010093962}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!33 &1082896771572422033
 MeshFilter:
@@ -314,7 +314,7 @@ GameObject:
   - component: {fileID: 3974016079923605419}
   m_Layer: 0
   m_Name: right arm
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -332,7 +332,7 @@ Transform:
   m_Children:
   - {fileID: 3777695087803677384}
   m_Father: {fileID: 3974016080010093962}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -7.3820004, y: 230.887, z: -448.763}
 --- !u!54 &3974016079923605418
 Rigidbody:
@@ -425,7 +425,7 @@ GameObject:
   - component: {fileID: 3974016080271806522}
   m_Layer: 0
   m_Name: Left-Curved-Shoulder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -443,7 +443,7 @@ Transform:
   m_Children:
   - {fileID: 4969815780352120767}
   m_Father: {fileID: 3974016080010093962}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -88.08501, z: 90.00001}
 --- !u!33 &1082896771256995228
 MeshFilter:
@@ -578,7 +578,7 @@ GameObject:
   - component: {fileID: 3974016080214425916}
   m_Layer: 0
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Body
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -596,7 +596,7 @@ Transform:
   m_Children:
   - {fileID: 8825827989037600030}
   m_Father: {fileID: 3974016080010093962}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &3974016080214425917
 Rigidbody:
@@ -641,7 +641,7 @@ GameObject:
   - component: {fileID: 3974016078837532764}
   m_Layer: 0
   m_Name: left arm
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
