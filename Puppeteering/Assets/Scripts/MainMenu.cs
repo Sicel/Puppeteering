@@ -8,8 +8,13 @@ using UnityEngine.SceneManagement;
  *Eddie Brazier
  */
 
+//Edited by Nick Schnering
+
 public class MainMenu : MonoBehaviour
 {
+    //Variable used to disable and enable puppet on main screen
+    public GameObject puppet;
+
     public void PlayGame()
     {
         //load the next scene in the build
@@ -22,4 +27,16 @@ public class MainMenu : MonoBehaviour
 
         Application.Quit();
     }
+
+    //Brief functions added by Nick
+    public void EnablePuppet()
+    {
+        puppet.SetActive(true);
+    }
+
+    public void DisablePuppet()
+    {
+        puppet.SetActive(false);
+    }
+
 }

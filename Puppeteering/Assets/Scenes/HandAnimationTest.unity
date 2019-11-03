@@ -387,11 +387,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Body
       objectReference: {fileID: 0}
-    - target: {fileID: 3974016080212182767, guid: ad648ab9bbcbdd743b6713502c8a9540,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3974016080212182764, guid: ad648ab9bbcbdd743b6713502c8a9540,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -406,11 +401,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: -0.0000009536743
-      objectReference: {fileID: 0}
-    - target: {fileID: 3974016080831170319, guid: ad648ab9bbcbdd743b6713502c8a9540,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3974016080831170316, guid: ad648ab9bbcbdd743b6713502c8a9540,
         type: 3}
@@ -427,11 +417,6 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -1.2459993
       objectReference: {fileID: 0}
-    - target: {fileID: 3974016079923605418, guid: ad648ab9bbcbdd743b6713502c8a9540,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3974016079923605419, guid: ad648ab9bbcbdd743b6713502c8a9540,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -441,11 +426,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_ConnectedAnchor.z
       value: 0.23714924
-      objectReference: {fileID: 0}
-    - target: {fileID: 3974016080271806520, guid: ad648ab9bbcbdd743b6713502c8a9540,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3974016080271806523, guid: ad648ab9bbcbdd743b6713502c8a9540,
         type: 3}
@@ -464,13 +444,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3974016080214425917, guid: ad648ab9bbcbdd743b6713502c8a9540,
         type: 3}
-      propertyPath: m_Drag
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3974016078837532754, guid: ad648ab9bbcbdd743b6713502c8a9540,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0.5
+      propertyPath: m_Mass
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 3974016078837532755, guid: ad648ab9bbcbdd743b6713502c8a9540,
         type: 3}
@@ -487,9 +462,21 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: -0.13367397
       objectReference: {fileID: 0}
+    - target: {fileID: 3974016080214425916, guid: ad648ab9bbcbdd743b6713502c8a9540,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: f1ff637bfd503f94b8f7a76af617b99d,
+        type: 2}
     m_RemovedComponents:
     - {fileID: 8540673228919281677, guid: ad648ab9bbcbdd743b6713502c8a9540, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ad648ab9bbcbdd743b6713502c8a9540, type: 3}
+--- !u!1 &1235604434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3974016080010093963, guid: ad648ab9bbcbdd743b6713502c8a9540,
+    type: 3}
+  m_PrefabInstance: {fileID: 1199641929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1600027217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -747,5 +734,25 @@ PrefabInstance:
       propertyPath: m_ConnectedBody
       value: 
       objectReference: {fileID: 1724967939}
+    - target: {fileID: 5711637981530834499, guid: 263b6ea41a7df654d919b63de5a55894,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821982342495746215, guid: 263b6ea41a7df654d919b63de5a55894,
+        type: 3}
+      propertyPath: puppet
+      value: 
+      objectReference: {fileID: 1235604434}
+    - target: {fileID: 1821982342495746215, guid: 263b6ea41a7df654d919b63de5a55894,
+        type: 3}
+      propertyPath: distance
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1821982342495746215, guid: 263b6ea41a7df654d919b63de5a55894,
+        type: 3}
+      propertyPath: radius
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263b6ea41a7df654d919b63de5a55894, type: 3}
