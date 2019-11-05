@@ -91,7 +91,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 155c9f9553ff9e647901221a7f020aad, type: 2}
+  - {fileID: 2100000, guid: 5e0ac44020dbafa4e9ea594c859c77a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -323,7 +323,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 110265b4e20fa054cadd2610335edcda, type: 2}
+  - {fileID: 2100000, guid: 578a4e8a1f095204eb496a952bed612a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -421,7 +421,6 @@ GameObject:
   - component: {fileID: 1821982342495746215}
   - component: {fileID: 4623228529221472287}
   - component: {fileID: 577839718771203451}
-  - component: {fileID: 2080800317}
   - component: {fileID: 4715146532099639204}
   m_Layer: 0
   m_Name: Puppeteer-Hand
@@ -477,7 +476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d172a5f355724284890092be42442384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuzzyMultiplier: 0.3
+  fuzzyMultiplier: 0.32
   marionette: {fileID: 0}
 --- !u!114 &4623228529221472287
 MonoBehaviour:
@@ -505,21 +504,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fingerCount: 0
   springForce: 100
---- !u!114 &2080800317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698572166460873002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17ab6de7e9c9e9b4198643e55aab1050, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mass: 1
-  lightSpeed: 10
-  targetPlayer: 0
 --- !u!114 &4715146532099639204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -623,7 +607,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 155c9f9553ff9e647901221a7f020aad, type: 2}
+  - {fileID: 2100000, guid: 5e0ac44020dbafa4e9ea594c859c77a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1440,7 +1424,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 155c9f9553ff9e647901221a7f020aad, type: 2}
+  - {fileID: 2100000, guid: 5e0ac44020dbafa4e9ea594c859c77a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1824,7 +1808,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 155c9f9553ff9e647901221a7f020aad, type: 2}
+  - {fileID: 2100000, guid: 5e0ac44020dbafa4e9ea594c859c77a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
